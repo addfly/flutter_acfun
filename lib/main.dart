@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import './ScaffoldRoute.dart';
+// import './ScaffoldRoute.dart';
+import 'Route/routes.dart';
 void main() {
   runApp(MyApp());
 }
@@ -9,7 +10,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.red),
-      home: ScaffoldRoute()
+      // home: ScaffoldRoute()
+      initialRoute: "/",
+      onGenerateRoute: onGenerateRoute,
     );
   }
 }
